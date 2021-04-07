@@ -9,6 +9,10 @@ int main(void) {
 	fd2 = open("test.dat", O_CREAT|O_WRONLY|O_TRUNC);
 	fd3 = socket(PF_INET, SOCK_DGRAM, 0);
 
+	printf("file descripter 1: %d\n", fd1);
+	printf("file descripter 2: %d\n", fd2);
+	printf("file descripter 3: %d\n", fd3);
+
 	close(fd1);
 	close(fd2);
 	close(fd3);
